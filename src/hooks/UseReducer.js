@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useReducer } from 'react';
+// using mostly in case you have a very complex state
+const reducer = (state, action) => {
+    switch (action.type) {
+        case "INCREMENT":
+            return { count: state.count + 1, showText: state.showText }
+        case "TOGGLE_SHOW_TEXT":
+            return { count: state.count, showText: !state.showText }
+        default:
+            return state;
+    }
+}
 
-function UseReducer() {
+const UseReducer = () => {
+    const [state, dispatch] = useReducer(reducer,
+        { count: 0, showText: true })
 
     return (
         <div>
-
+            <div>useReducer examples:</div>
+            <div>counter - {state.count}
+                <button
+                    onClick={() => {
+                        dispatch({ type: "INCREMENT" });
+                        dispatch({ type: "TOGGLE_SHOW_TEXT" });
+                    }}>Increment
+                </button>
+            </div>
+            {state.showText && <p>This is a text</p>}
         </div>);
 }
 

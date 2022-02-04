@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function UseState() {
+const UseState = () => {
     const [counter, setCounter] = useState(0);
     const [name, setName] = useState("");
 
