@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-// using mostly in case you have a very complex state
+// useReducer using mostly in case you have a very complex state, works similar to Redux
 const reducer = (state, action) => {
     switch (action.type) {
         case "INCREMENT":

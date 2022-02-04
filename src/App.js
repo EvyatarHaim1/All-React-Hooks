@@ -1,4 +1,5 @@
 import './App.css';
+import UseEffect from './hooks/UseEffect';
 import UseReducer from './hooks/UseReducer';
 import UseState from './hooks/UseState';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <UseState />
       <UseReducer />
+      <UseEffect />
     </div>
   );
 }

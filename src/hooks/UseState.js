@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// useState it's a variable in React that can be set and render
 
 const UseState = () => {
     const [counter, setCounter] = useState(0);
