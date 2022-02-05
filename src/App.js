@@ -1,6 +1,7 @@
 import './App.css';
 import UseEffect from './hooks/UseEffect';
 import UseReducer from './hooks/UseReducer';
+import UseRef from './hooks/UseRef';
 import UseState from './hooks/UseState';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <UseState />
       <UseReducer />
       <UseEffect />
+      <UseRef />
     </div>
   );
 }

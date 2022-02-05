@@ -27,6 +27,7 @@ function UseEffect() {
 
     return (
         <div>
+            <h2>useEffect examples:</h2>
             {email}
             number of changing the email: {counter}
             <button onClick={() => setCounter(counter + 1)}>Change random email </button>

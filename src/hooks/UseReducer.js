@@ -17,7 +17,7 @@ const UseReducer = () => {
 
     return (
         <div>
-            <div>useReducer examples:</div>
+            <h2>useReducer examples:</h2>
             <div>counter - {state.count}
                 <button
                     onClick={() => {
