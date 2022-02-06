@@ -5,10 +5,10 @@ customizes the instance value that is exposed to parent components when using re
 in the parent I pass a ref to the child component, the onClick event can access the child imperative child's function 
 which alter the child state. 
 */
-function UseImperativeHandle() {
+const UseImperativeHandle = () => {
     const buttonRef = useRef(null);
     return (
-        <div>
+        <div className="hook">
             <h2>UseImperativeHandle example:</h2>
             <button onClick={() => { buttonRef.current.alterToggle() }}>Button from parent :</button>
             <Button ref={buttonRef} />

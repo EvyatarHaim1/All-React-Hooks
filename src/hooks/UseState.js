@@ -15,7 +15,7 @@ const UseState = () => {
     }
 
     return (
-        <div>
+        <div className="hook">
             <h2>useState examples:</h2>
             <div>counter - {counter} <button onClick={increment}>Increment</button></div>
             <input placeholder="Write your name" onChange={handleChange} />

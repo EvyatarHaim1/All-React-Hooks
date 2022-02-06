@@ -16,7 +16,7 @@ const UseReducer = () => {
         { count: 0, showText: true })
 
     return (
-        <div>
+        <div className="hook">
             <h2>useReducer examples:</h2>
             <div>counter - {state.count}
                 <button

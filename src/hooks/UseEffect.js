@@ -27,7 +27,7 @@ const UseEffect = () => {
     }, [counter])
 
     return (
-        <div>
+        <div className="hook">
             <h2>useEffect examples:</h2>
             {email}
             number of changing the email: {counter}

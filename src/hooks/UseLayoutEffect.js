@@ -15,7 +15,7 @@ const UseLayoutEffect = () => {
     }, []);
 
     return (
-        <div>
+        <div className="hook">
             <h2>UseLayoutEffect example:</h2>
             <input ref={inputRef} value="PEDRO" style={{ width: 200, height: 20 }} />
         </div>

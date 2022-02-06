@@ -1,4 +1,5 @@
 import './App.css';
+import UseContext from './hooks/UseContext/UseContext';
 import UseEffect from './hooks/UseEffect';
 import UseImperativeHandle from './hooks/UseImperativeHandle/UseImperativeHandle';
 import UseLayoutEffect from './hooks/UseLayoutEffect';
@@ -15,6 +16,7 @@ function App() {
       <UseRef />
       <UseLayoutEffect />
       <UseImperativeHandle />
+      <UseContext />
     </div>
   );
 }

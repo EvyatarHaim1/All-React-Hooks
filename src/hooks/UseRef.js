@@ -14,7 +14,7 @@ const UseRef = () => {
     };
 
     return (
-        <div>
+        <div className="hook">
             <h2>UseRef examples:</h2>
             <input type="text" placeholder="Ex..." ref={inputRef} />
             <button onClick={onFocus}>Focus input field</button>
