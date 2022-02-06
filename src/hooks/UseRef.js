@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 // useRef is the easiest way to access and manipulate dom element
-function UseRef() {
+const UseRef = () => {
     const [name, setName] = useState("Evyatar");
     const inputRef = useRef();
 

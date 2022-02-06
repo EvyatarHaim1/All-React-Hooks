@@ -7,4 +7,4 @@ All react hooks practice:
 - useContext
 - useMemo
 - useRef
-- useLayoutEffect, useEffect
+- useLayoutEffect
