@@ -1,5 +1,8 @@
 import { useCallback, useState } from "react";
 import Child from "./Child";
+/* useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed. 
+This is useful when passing callbacks to optimized child components 
+that rely on reference equality to prevent unnecessary renders*/
 
 const UseCallback = () => {
     const [toggle, setToggle] = useState(false);
